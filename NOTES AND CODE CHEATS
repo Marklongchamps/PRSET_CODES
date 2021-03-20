@@ -1,0 +1,40 @@
+TO DROP A DB  bundle exec rake db:drop
+TO CREATE A DB bundle exec rake db:create
+TO SEED A DB   bundle exec rake db:seed
+to ROLLBACK    bundle exec rake db:rollback
+
+mitigation
+bundle exec rake db:create_migration NAME=create_starships
+should always be plural.  This makes our timestamp file 
+
+pry -r './server.rb'
+
+bundle exec rake db:migrate && bundle exec rake db:rollback && bundle exec rake db:migrate
+
+
+NEW RAILS STUFF
+
+TO ENTER A RAILS PRY CONSOLE  rails c
+
+TO SEE WHAT IS IN THE FIRST ENTRY.  <name>.first.<name>  this tests associations one to many  
+
+TO SEE ALL ROUTES  rails routes
+
+RAILS S TO START SERVER 
+
+exec rake db:test:prepare  when you have created new migrations to sync your test database with the migration files you have.
+
+bundle exec rake db:migrate  this makes all the schemas 
+
+bundle exec rails g migration create_books  
+
+bundle exec rspec to run ests
+
+to reload the server reload!  in a pry session
+
+rails routes | grep <the name of the path you want book or smurf>
+
+
+yarn run
+
+bundle exec rails s
